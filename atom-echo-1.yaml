@@ -41,7 +41,7 @@ speaker:
 
 micro_wake_word:
   models:
-    - model: http://localhost:8080/havrylo.json
+    - model: github://velorass/microwakeword_models/models/havrylo.json@main
       probability_cutoff: 0.6
       sliding_window_size: 10
 
