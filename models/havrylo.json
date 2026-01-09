@@ -2,7 +2,7 @@
   "type": "micro",
   "wake_word": "Havrylo",
   "author": "velorias",
-  "model": "https://raw.githubusercontent.com/velorass/microwakeword_models/main/models/havrylo.tflite",
+  "model": "havrylo.tflite",
   "trained_languages": ["uk"],
   "version": 2,
   "micro": {
