@@ -1,9 +1,11 @@
 esphome:
   name: atom-echo-1
   friendly_name: "Atom Echo 1"
+  min_version: 2024.7.0
 
 esp32:
   board: m5stack-atom
+  cpu_frequency: 240MHz
   framework:
     type: esp-idf
 
@@ -42,8 +44,6 @@ speaker:
 micro_wake_word:
   models:
     - model: github://velorass/microwakeword_models/models/havrylo.json@main
-      probability_cutoff: 0.6
-      sliding_window_size: 10
 
   on_wake_word_detected:
     - light.turn_on:
